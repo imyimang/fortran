@@ -25,7 +25,7 @@ program bmi
 
     end if
 
-    !write(bmi_str, '(F4.1)') bmi_value
+
     bmi_value = anint(bmi_value*10.0)/10.0
     write(*, '(A,F0.1)') "", bmi_value
 
