@@ -1,4 +1,6 @@
-program counting
+! 另一種寫法
+
+program counting2
 
     implicit none
     integer :: number,i,j
@@ -7,15 +9,14 @@ program counting
     print *, "enter a number:"
     read *, number
 
-    i = 0
+    i = 1
     j = i
 
     write(str_number, '(I0)') number
     write(str_j, '(I0)') j
     print *, "start counting from "//trim(adjustl(str_j))//" to "//adjustl(str_number)
 
-    do while(number > i) 
-        i = i+1
+    do i = j,number
         print *, i
 
     end do
@@ -24,5 +25,4 @@ program counting
 
 
 
-end program counting
-
+end program counting2
