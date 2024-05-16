@@ -1,6 +1,6 @@
 無聊來學一下fortran
 # 項目
-## 基礎練習
+## 基礎練習(syntax)
 * array 陣列練習
 * bmi 判斷式練習
 * checkscore 判斷式練習
