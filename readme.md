@@ -1,11 +1,11 @@
 無聊來學一下fortran
 # 項目
 ## 基礎語法練習(syntax)
+* helloworld 就是hello world
 * array 陣列練習
 * bmi 判斷式練習
 * checkscore 判斷式練習
 * counting 迴圈練習(for 和 while兩種寫法)
-* helloworld 就是hello world
 * triangle 迴圈練習
 ## 演算法練習(algorithm)
 * bogo 猴子排序法
