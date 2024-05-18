@@ -8,6 +8,7 @@
 * helloworld 就是hello world
 * triangle 迴圈練習
 ## 演算法練習(algorithm)
+* bogo 猴子排序法
 * bubble 泡沫排序法
 
 # 參考資料
