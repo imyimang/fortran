@@ -2,7 +2,7 @@ program bogosort
     implicit none
     integer :: n ! 要排序的元素數量
     integer, allocatable :: array(:)
-    integer :: attempts ! 嘗試的次數
+    integer :: attempts, i ! 嘗試的次數
     
     ! 從使用者讀取陣列大小
     write(*, '(A)', advance='no') "Please enter the size of the array to be sorted:"
@@ -12,10 +12,11 @@ program bogosort
     allocate(array(n))
     
     attempts = 0 ! 初始化嘗試次數
-    
-
-    call initialize_array(array)
-    
+    do i = 1,n
+        write(*, '(A, I0, A)', advance='no') "enter the number", i, ": "
+        read *, array(i)
+    end do
+        
 
     print *, "numbers before sort:"
     call print_array(array)
@@ -36,17 +37,6 @@ program bogosort
 
 contains
 
-    subroutine initialize_array(arr)
-        integer, intent(inout) :: arr(:)
-        integer :: i
-        
-        ! 用亂數初始化陣列
-        do i = 1, size(arr)
-            arr(i) = i
-        end do
-        call shuffle_array(arr)
-    end subroutine initialize_array
-
     subroutine shuffle_array(arr)
         integer, intent(inout) :: arr(:)
         integer :: i, j, temp
@@ -60,6 +50,7 @@ contains
             arr(j) = temp
         end do
     end subroutine shuffle_array
+
 
     subroutine bogo_sort(arr, attempts)
         integer, intent(inout) :: arr(:)
