@@ -10,6 +10,7 @@
 ## 演算法練習(algorithm)
 * bogo 猴子排序法
 * bubble 泡沫排序法
+* quick 快速排序法
 
 # 參考資料
 ### [vscode fortran安裝教學](https://www.youtube.com/watch?v=RrsoM6wVEWE&pp=ygUeZm9ydHJhbiBpbiB2aXN1YWwgc3R1ZGlvIGNvZGUg)
