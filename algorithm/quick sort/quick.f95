@@ -41,7 +41,7 @@ end module sort_module
 
 
 
-program test_quick_sort
+program quick
     use sort_module
     implicit none
     integer, allocatable :: array(:)
@@ -63,8 +63,7 @@ program test_quick_sort
     end do
     write(*, '(A, I0)', advance='no') "how much times quick sort try: ", attempts
 
-end program test_quick_sort
-
+end program quick
 
 
 
